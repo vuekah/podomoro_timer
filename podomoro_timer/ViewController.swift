@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var startBtn: UIButton!
     @IBOutlet weak var timerText: UILabel!
     
+    @IBOutlet weak var viewButton: UIStackView!
     
     
     
@@ -32,7 +33,13 @@ class ViewController: UIViewController {
         initUI()
         drawBackLayer();
         drawForLayer();
-       
+        
+        timerText.layer.position = centerPoint
+        
+        NSLayoutConstraint.activate([
+            viewButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            viewButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 80)
+        ])
         
     }
     @IBAction func startBtn(_ sender: Any) {
@@ -68,7 +75,7 @@ class ViewController: UIViewController {
             startAnimation()
         }
         
-
+        
     }
     @objc func updateTimer() {
         if counter > 0 {
@@ -106,7 +113,7 @@ class ViewController: UIViewController {
         foreProgressLayer.strokeColor = UIColor.gray.cgColor
         foreProgressLayer.fillColor = UIColor.clear.cgColor
         foreProgressLayer.lineWidth = 5
-      
+        
         
     }
     

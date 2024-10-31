@@ -16,63 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wgk-WM-c9a">
-                                <rect key="frame" x="132" y="428" width="177.66666666666663" height="109.33333333333337"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="center" lineBreakMode="clip" adjustsFontSizeToFit="NO" id="mK9-vt-hSc">
+                                <rect key="frame" x="131" y="450" width="177.66666666666669" height="54.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gz2-mb-9CJ">
+                                <rect key="frame" x="131" y="423" width="178" height="109.33333333333337"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="center" lineBreakMode="clip" adjustsFontSizeToFit="NO" id="mK9-vt-hSc">
-                                        <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="54.666666666666664"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" id="9Df-Ua-igU">
+                                        <rect key="frame" x="0.0" y="95.333333333333329" width="79" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gz2-mb-9CJ">
-                                        <rect key="frame" x="0.0" y="54.666666666666686" width="177.66666666666666" height="54.666666666666657"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" id="9Df-Ua-igU">
-                                                <rect key="frame" x="0.0" y="40.333333333333336" width="78.666666666666671" height="14"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" buttonSize="medium">
-                                                    <backgroundConfiguration key="background">
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                    </backgroundConfiguration>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="startBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="0RA-8i-ErB"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="NHM-8w-hZA">
-                                                <rect key="frame" x="98.666666666666657" y="40.666666666666686" width="79" height="14"/>
-                                                <color key="tintColor" systemColor="tableBackgroundColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" cornerRadius="8" strokeWidth="2">
-                                                        <color key="strokeColor" systemColor="systemBackgroundColor"/>
-                                                    </backgroundConfiguration>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="resetBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="U17-UC-1ei"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.14999999999999999"/>
-                                    </stackView>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" buttonSize="medium">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="0RA-8i-ErB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="NHM-8w-hZA">
+                                        <rect key="frame" x="99" y="95.333333333333329" width="79" height="14"/>
+                                        <color key="tintColor" systemColor="tableBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="8" strokeWidth="2">
+                                                <color key="strokeColor" systemColor="systemBackgroundColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="resetBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="U17-UC-1ei"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.25"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.14999999999999999"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Wgk-WM-c9a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="0.75" id="VzT-T9-kse"/>
-                            <constraint firstItem="Wgk-WM-c9a" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-9.5" id="gkD-sK-xTb"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="resetBtn" destination="NHM-8w-hZA" id="gSW-Rx-PXb"/>
                         <outlet property="startBtn" destination="9Df-Ua-igU" id="M2c-iO-ehM"/>
                         <outlet property="timerText" destination="mK9-vt-hSc" id="aUO-ts-RNN"/>
+                        <outlet property="viewButton" destination="gz2-mb-9CJ" id="Vcl-MK-cx7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,7 +76,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
